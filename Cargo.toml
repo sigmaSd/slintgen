@@ -4,9 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-tree-sitter = "0.20.10"
-tree-sitter-slint = {git = "https://github.com/slint-ui/tree-sitter-slint"}
+tree-sitter = "0.24.5"
+tree-sitter-slint = { git = "https://github.com/slint-ui/tree-sitter-slint", rev = "f11da7e6" }
 
 [build-dependencies]
-cc="*"
-
+cc = "1.2"

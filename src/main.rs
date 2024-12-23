@@ -5,7 +5,7 @@ fn main() {
     // Initialize Tree-sitter parser
     let mut parser = Parser::new();
     parser
-        .set_language(tree_sitter_slint::language())
+        .set_language(&tree_sitter_slint::LANGUAGE.into())
         .expect("Error loading Slint grammar");
 
     // Read and parse the Slint file
